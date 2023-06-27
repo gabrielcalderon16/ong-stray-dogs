@@ -2,6 +2,8 @@ import '../styles/index.scss';
 import 'bootstrap';
 import indexPage from "../pages/index.html";
 import aboutPage from "../pages/about.html";
+import donationsPage from "../pages/donations.html";
+import contactPage from "../pages/contact.html";
 
 console.log('webpack & bootstrap');
 
@@ -17,13 +19,13 @@ const route = (event) => {
 const routes = {
     '/': indexPage,
     '/about': aboutPage,
+    '/donations': donationsPage,
+    '/contact': contactPage,
 };
 
 const handleLocation = async () => {
     const path = window.location.pathname;
     const route = routes[path];
-    // console.log(route);
-    // const html = await fetch(route).then((data) => data.text());
     document.getElementById('app').innerHTML = route;
 };
 
