@@ -9,14 +9,19 @@
 </head>
 <body>
   <!-- Navbar -->
+  <!-- TODO: convert into parallax banner -->
   <nav class="navbar navbar-expand-lg navbar-white" style="background-color: #D5F0F2;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">MyBrand</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Logo" width="45">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Menu -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul id="my-ul" class="ms-auto navbar-nav">
+        <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
           <li class="nav-item">
             <a class="nav-link" href="#">Inicio</a>
           </li>
@@ -49,13 +54,14 @@
     </div>
   </section>
   <!-- Title and Subtitle -->
-  <div class="row mx-2 mx-md-5 my-md-5">
+  <div class="row mx-2 mx-md-5 my-5">
     <div class="col-12 text-center">
       <h2 class="fw-bold display-3 d-md-none">Adoptar perros, salva vidas</h2>
       <h2 class="fw-bold display-6 d-none d-md-block">Adoptar perros, salva vidas</h2>
     </div>
     
     <!-- Dog Image -->
+    <!-- TODO: add shape and function of carousel -->
     <div class="col-md-4 my-5 text-center">
       <div>
         <img src="./images/PerroTriste.png" alt="Perro Triste" width="180">
@@ -69,7 +75,7 @@
     </div>
   </div>
   <!-- Title, Subtitle and Image -->
-  <div class="row mx-2 mx-md-5 my-md-5">
+  <div class="row mx-2 mx-md-5 my-5">
 
     <div class="col-12 text-center">
       <h2 class="fw-bold display-3 d-md-none">Dona para el cuidado de nuestros animales</h2>
@@ -83,6 +89,35 @@
     <div class="col-md-8 my-auto text-center">
       <p class="text-dark">Al donar ayudas a proporcionar los recursos necesarios para mejorar la calidad de vida de los animales en situación de calle, ya que se utilizan  para proporcionar alimentos, agua, atención médica, refugio y otros suministros esenciales para los perros sin hogar.</p>
       <button class="btn btn-primary my-3">Donar ahora</button>
+    </div>
+  </div>
+  <div class="row p-3" style="background-color: #D5F0F2;">
+    <div class="col-12 col-sm-4 text-center my-0 my-auto">
+      <img src="./images/logo.png" alt="Logo" width="80">
+    </div>
+    <div class="col-6 col-sm-4  my-0 my-md-4">
+      <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre Nosotros</a>
+        </li>          
+        <li class="nav-item">
+          <a class="nav-link" href="#">Donaciones</a>
+        </li>        
+      </ul>
+    </div>
+    <div class="col-6 col-sm-4  my-0 my-md-4">
+      <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contáctanos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 border border-1 mb-4 mt-2"></div>
+    <div class="col-12 text-center">
+      <p>© 2023 Gabriel Calderon. Todos los derechos reservados</p>
     </div>
   </div>
 </body>
