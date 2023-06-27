@@ -17,6 +17,7 @@ module.exports = merge(common, {
       logging: 'error',
     },
     hot: true,
+    historyApiFallback: true
   },
   plugins: [
     new Webpack.DefinePlugin({
