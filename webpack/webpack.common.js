@@ -42,14 +42,6 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader',
       },
-      // {
-      //   test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-      //   type: 'asset'
-      // },
-      {
-        test: /\.(jpg|png|svg|gif)$/,
-        type: 'asset/resource'
-      },
     ],
   },
 };
