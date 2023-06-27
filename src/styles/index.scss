@@ -1,8 +1,12 @@
 @import "bootstrap/scss/bootstrap";
 
-$body-color: slateblue;
-
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": #EDC49B,
+  "secondary": #D5F0F2
+));
+
+@import "bootstrap"

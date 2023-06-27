@@ -5,11 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
   <meta name="description" content="A light foundation for your next frontend project based on webpack.">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain/bsb.css" />
 </head>
 <body>
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Webpack!</h1>
-    <button class="btn btn-primary">Primary button</button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-white" style="background-color: #D5F0F2;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyBrand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="my-ul" class="ms-auto navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nosotros</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donaciones</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctanos</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner -->
+  <section class="px-5 py-8 py-xxl-20 background-position-center background-size-cover bsb-overlay bsb-hover-pull" style="background-image: url('./images/dogbanner.jpg');">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+          <h1 class="display-3 fw-bold mb-3">Adoptar perros, salva vidas</h1>
+          <!-- <p class="lead mb-5">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p> -->
+          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-light btn-lg px-4 gap-3">Free Consultation</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">Buy Credits</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Title and Subtitle -->
+  <div class="row mx-2 mx-md-5 my-md-5">
+    <div class="col-12 text-center">
+      <h2 class="fw-bold display-3 d-md-none">Adoptar perros, salva vidas</h2>
+      <h2 class="fw-bold display-6 d-none d-md-block">Adoptar perros, salva vidas</h2>
+    </div>
+    
+    <!-- Dog Image -->
+    <div class="col-md-4 my-5 text-center">
+      <div>
+        <img src="./images/PerroTriste.png" alt="Perro Triste" width="180">
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="col-md-8 my-auto text-center px-md-5">
+      <p class="text-dark">Los perros en situación de calle pueden ser muy difíciles y peligrosos. Estos perros no tienen un hogar seguro y a menudo tienen que lidiar con el hambre, la sed, el frío, el calor, las enfermedades y el peligro de ser atropellados por los automóviles en las calles.</p>
+      <button class="btn btn-primary my-3">Sobre Nosotros</button>
+    </div>
+  </div>
+  <!-- Title, Subtitle and Image -->
+  <div class="row mx-2 mx-md-5 my-md-5">
+
+    <div class="col-12 text-center">
+      <h2 class="fw-bold display-3 d-md-none">Dona para el cuidado de nuestros animales</h2>
+      <h2 class="fw-bold display-6 d-none d-md-block">Dona para el cuidado de nuestros animales</h2>
+    </div>
+
+    <div class="col-md-4 my-5 text-center">
+      <img src="./images/dogext.png" alt="Perro Triste" width="100%" class="rounded-start-5">
+    </div>
+
+    <div class="col-md-8 my-auto text-center">
+      <p class="text-dark">Al donar ayudas a proporcionar los recursos necesarios para mejorar la calidad de vida de los animales en situación de calle, ya que se utilizan  para proporcionar alimentos, agua, atención médica, refugio y otros suministros esenciales para los perros sin hogar.</p>
+      <button class="btn btn-primary my-3">Donar ahora</button>
+    </div>
   </div>
 </body>
 </html>
