@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 import 'bootstrap';
+import simpleParallax from 'simple-parallax-js';
 import indexPage from "../pages/index.html";
 import aboutPage from "../pages/about.html";
 import donationsPage from "../pages/donations.html";
@@ -33,3 +34,10 @@ window.onpopstate = handleLocation;
 window.route = route;
 
 handleLocation();
+
+// Parallax controller
+const image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+	delay: .6,
+    scale: 1.5,
+});
