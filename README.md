@@ -2,7 +2,7 @@
 
 ## Instalar dependencias
 ```
-cd /web npm install
+cd ./web npm install
 cd ../api npm install
 ```
 
