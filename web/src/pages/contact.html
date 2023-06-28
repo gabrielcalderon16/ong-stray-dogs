@@ -55,18 +55,18 @@
     
     <!-- Contact Form -->
     <div class="col-md-6 my-5 px-5">
-      <form action="">
+      <form id="contactForm">
         <div class="mb-3">
           <label for="FormControlInput1" class="form-label">Nombres</label>
-          <input type="text" class="form-control" id="FormControlInput1" placeholder="Nombres">
+          <input type="text" class="form-control" id="FormControlInput1" placeholder="Nombres" name="nombres">
         </div>
         <div class="mb-3">
           <label for="FormControlInput2" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="FormControlInput2" placeholder="nombre@ejemplo.com">
+          <input type="email" class="form-control" id="FormControlInput2" placeholder="nombre@ejemplo.com" name="correo">
         </div>
         <div class="mb-3">
           <label for="FormControlTextarea1" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="FormControlTextarea1" rows="3" name="descripcion"></textarea>
         </div>
         <div class="d-grid gap-2">
           <button class="btn btn-primary" type="submit">Enviar mensaje</button>
