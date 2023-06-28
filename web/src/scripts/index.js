@@ -70,7 +70,7 @@ async function onFormSubmit(event) {
 
     const result = await response.json();
     if (result) alert("formulario enviado con éxito");
-    // TODO: resetear valores
+    form.reset();
   } catch (error) {
     console.error(error);
   }
