@@ -1,0 +1,279 @@
+<html lang="en">
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-white"
+      style="background-color: #d5f0f2"
+    >
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="Logo" width="45" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link" href="/" onclick="route()">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" onclick="route()"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/donations" onclick="route()"
+                >Donaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact" onclick="route()"
+                >Contáctanos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <section class="px-5 py-8 py-xxl-20 background-position-center background-size-cover bsb-overlay bsb-hover-pull" style="background-color: #D5F0F2 !important; --bsb-overlay-opacity: 0 !important;">
+    <div class="container" style="background-color: #D5F0F2;">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+          <h1 class="display-4 fw-bold mb-3">Adoptar perros, salva vidas</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Title and Subtitle -->
+    <div class="row mx-2 mx-md-5 my-5">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold display-4 d-md-none">Adoptar perros, salva vidas</h2>
+        <h2 class="fw-bold display-7 d-none d-md-block">
+          Adoptar perros, salva vidas
+        </h2>
+      </div>
+
+      <!-- Dog Carousel Images -->
+      <div
+        class="col-md-4 my-5 text-center rounded-circle"
+        style="max-width: 400px; max-height: 400px; background-color: #edc49b"
+      >
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" style="border-radius: 30%">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="../images/PerroTriste.png"
+                class="d-block w-100"
+                alt="..."
+                width="400px"
+                height="400px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="../images/perroindividual.png"
+                class="d-block w-100"
+                alt="..."
+                width="400px"
+                height="400px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="../images/perroindividual2.png"
+                class="d-block w-100"
+                alt="..."
+                width="400px"
+                height="400px"
+                style="object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-md-8 my-auto text-center px-md-5">
+        <p class="text-dark">
+          Los perros en situación de calle pueden ser muy difíciles y
+          peligrosos. Estos perros no tienen un hogar seguro y a menudo tienen
+          que lidiar con el hambre, la sed, el frío, el calor, las enfermedades
+          y el peligro de ser atropellados por los automóviles en las calles.
+        </p>
+        <button class="btn btn-primary my-3">Sobre Nosotros</button>
+      </div>
+    </div>
+    <!-- Title, Subtitle and Image -->
+    <div class="row mx-2 px-0 px-md-5 mx-md-5 my-5">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold display-4 d-md-none">
+          Dona para el cuidado de nuestros animales
+        </h2>
+        <h2 class="fw-bold display-7 d-none d-md-block">
+          Dona para el cuidado de nuestros animales
+        </h2>
+      </div>
+
+      <div
+        class="col-md-4 my-5 text-center rounded-4"
+        style="
+          background-color: #D5F0F2;
+          position: relative;
+        "
+      >
+        <div
+          id="sun"
+          style="
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(243, 235, 32);
+            box-shadow: 0 0 30px rgb(243, 235, 32);
+          "
+        ></div>
+        <img
+          src="../images/dogext.png"
+          alt="Perro Triste"
+          width="100%"
+          height="100%"
+          class="rounded-start-5 thumbnail"
+        />
+      </div>
+
+      <div class="col-md-8 my-auto text-center">
+        <p class="text-dark">
+          Al donar ayudas a proporcionar los recursos necesarios para mejorar la
+          calidad de vida de los animales en situación de calle, ya que se
+          utilizan para proporcionar alimentos, agua, atención médica, refugio y
+          otros suministros esenciales para los perros sin hogar.
+        </p>
+        <button class="btn btn-primary my-3">Donar ahora</button>
+      </div>
+    </div>
+    <!-- Title, Subtitle and Card -->
+    <div class="row mx-2 mx-md-5 my-5">
+      <div class="col-12 text-center">
+        <h2 class="fw-bold display-4 d-md-none">
+          Escucha los testimonios de personas que han adoptado
+        </h2>
+        <h2 class="fw-bold display-7 d-none d-md-block">
+          Escucha los testimonios de personas que han adoptado
+        </h2>
+      </div>
+
+      <!-- Card Testimony -->
+      <div class="col-md-6 my-5 d-flex justify-content-center">
+        <div class="col-sm-8 text-center">
+          <div class="card bg-light border border-0 rounded-4 py-4">
+            <div class="card-body">
+              <img
+                src="../images/Maria.jpg"
+                alt="Persona (Maria)"
+                width="100"
+                class="border border-2 rounded-circle"
+              />
+              <p class="text-dark fw-medium my-2 fs-5">María</p>
+              <p class="text-dark">
+                <em
+                  >Cuando vi a Luna en la página, me enamoré de ella al
+                  instante. Era una perrita muy tímida y asustada, pero con
+                  mucho amor y paciencia logramos ganarnos su confianza</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-md-6 my-auto text-center px-md-5">
+        <p class="text-dark">
+          Adoptar un perro en situación de calle es una de las mejores
+          decisiones que puedes tomar. No solo le das una segunda oportunidad a
+          un animal que lo necesita, sino que también te llevas a casa un amigo
+          fiel y agradecido. Pero no nos creas a nosotros, escucha lo que dicen
+          algunas de las personas que han adoptado a través de nuestra página.
+        </p>
+      </div>
+    </div>
+    <!-- Text and Subtitle -->
+    <div class="row mx-2 mx-md-5 my-5">
+      <div class="col-12 text-center mb-5">
+        <h2 class="fw-bold display-4 d-md-none">Conecta con nosotros</h2>
+        <h2 class="fw-bold display-7 d-none d-md-block">
+          Conecta con nosotros
+        </h2>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <p class="text-dark">
+            Estamos a tu disposición para atender cualquier inquietud que tengas
+            sobre nuestra página o nuestra misión de ayudar a los perros en
+            situación de calle. Tu opinión es muy importante para nosotros y nos
+            ayuda a mejorar nuestro servicio. ¡Gracias por tu interés y apoyo!
+            🙌.
+          </p>
+          <button class="btn btn-primary my-3">Contáctanos</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="row p-3" style="background-color: #d5f0f2">
+      <div class="col-12 col-sm-4 text-center my-0 my-auto">
+        <img src="../images/logo.png" alt="Logo" width="80" />
+      </div>
+      <div class="col-6 col-sm-4 my-0 my-md-4">
+        <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
+          <li class="nav-item">
+            <a class="nav-link" href="/" onclick="route()">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" onclick="route()"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donations" onclick="route()"
+              >Donaciones</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-4 my-0 my-md-4">
+        <ul id="my-ul" class="ms-auto navbar-nav fw-medium">
+          <li class="nav-item">
+            <a class="nav-link" href="/contact" onclick="route()"
+              >Contáctanos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 border border-1 mb-4 mt-2"></div>
+      <div class="col-12 text-center">
+        <p>© 2023 Gabriel Calderon. Todos los derechos reservados</p>
+      </div>
+    </div>
+  </body>
+</html>
